@@ -1,0 +1,50 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kavita-mcp"
+version = "0.1.0"
+description = "Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text="MIT"}
+authors = [{name="Sandra Schipal", email="sandraschipal@gmail.com"}]
+keywords = ["mcp", "fastmcp"]
+classifiers = ["Development Status :: 4 - Beta", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3"]
+dependencies = [
+    "fastmcp>=3.4.4,<4",
+    "fastapi>=0.115.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.1",
+    "rich>=13.8.0",
+    "structlog>=24.4.0",
+    "uvicorn>=0.34.0",
+    "prefab-ui>=0.18.0",
+]
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0", "pytest-asyncio>=0.23.0", "ruff>=0.16.0"]
+
+[project.scripts]
+kavita-mcp = "kavita_mcp.__main__:run"
+
+[project.urls]
+Homepage = "https://github.com/sandraschi/kavita-mcp"
+Repository = "https://github.com/sandraschi/kavita-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kavita_mcp"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = ["mcpb", "webapp", ".venv", "node_modules", "dist"]
+
+[tool.ruff.lint]
+select = ["E","F","I","UP","C4","B"]
+ignore = ["E501","B008","B904"]
+
+[tool.ruff.format]
+quote-style = "double"

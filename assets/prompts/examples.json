@@ -1,0 +1,947 @@
+[
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 1 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 2 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 3 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 4 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 5 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 6 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 7 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 8 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 9 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 10 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 11 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 12 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 13 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 14 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 15 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 16 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 17 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 18 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 19 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 20 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 21 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 22 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 23 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 24 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 25 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 26 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 27 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 28 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 29 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 30 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 31 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 32 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 33 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 34 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 35 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 36 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 37 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 38 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 39 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 40 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 41 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 42 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 43 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 44 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 45 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 46 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 47 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 48 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 49 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 50 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 51 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 52 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 53 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 54 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 55 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 56 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 57 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 58 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 59 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 60 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 61 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 62 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 63 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 64 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 65 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 66 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 67 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 68 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 69 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 70 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 71 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 72 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 73 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 74 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 75 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 76 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 77 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 78 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 79 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 80 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 81 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 82 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 83 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 84 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 85 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 86 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 87 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 88 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 89 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 90 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 91 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 92 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 93 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 94 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 95 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 96 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 97 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 98 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 99 for search"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "scan",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 100 for scan"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "mark_progress",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 101 for mark_progress"
+  },
+  {
+    "tool": "kavita_system",
+    "operation": "status",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 102 for status"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "list",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 103 for list"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "get",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 104 for get"
+  },
+  {
+    "tool": "kavita_library",
+    "operation": "search",
+    "args": {
+      "limit": 20,
+      "offset": 0
+    },
+    "description": "Example 105 for search"
+  }
+]

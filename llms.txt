@@ -1,0 +1,3 @@
+# kavita-mcp
+Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS
+Backend 11189 Frontend 11190

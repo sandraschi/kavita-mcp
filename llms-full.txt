@@ -1,0 +1,4 @@
+# kavita-mcp Full
+Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS
+Ports 11189/11190
+Tools: [{'name': 'kavita_library', 'description': 'Manage Kavita libraries (list, get, scan)'}, {'name': 'kavita_series', 'description': 'Browse/search Kavita series and volumes'}, {'name': 'kavita_reading', 'description': 'Reading progress and bookmarks'}, {'name': 'kavita_users', 'description': 'List/get Kavita users'}, {'name': 'kavita_system', 'description': 'Kavita system status'}, {'name': 'show_kavita_status_prefab', 'description': 'Prefab status card for Kavita'}]

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+	"files": { "ignoreUnknown": true },
+	"linter": {
+		"enabled": true,
+		"rules": { "style": { "noNonNullAssertion": "off" } }
+	},
+	"formatter": { "enabled": true }
+}
