@@ -16,4 +16,4 @@ ci: lint test
 serve:
     uv run python -m kavita_mcp.server
 mcpb-pack:
-    pwsh.exe -NoProfile -ExecutionPolicy Bypass -File scripts/mcpb-pack.ps1
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/mcpb-pack.ps1
