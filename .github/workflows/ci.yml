@@ -10,4 +10,14 @@ jobs:
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run ruff format --check .
+      - run: uv run pyright src/
       - run: uv run pytest -q
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install --frozen-lockfile
+        working-directory: webapp/frontend
+      - run: bun run check
+        working-directory: webapp/frontend
+      - run: bun run biome:ci
+        working-directory: webapp/frontend

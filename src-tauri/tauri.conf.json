@@ -1,10 +1,10 @@
 {
     "$schema": "https://schema.tauri.app/config/2",
     "productName": "Kavita MCP",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "identifier": "com.sandraschi.kavita-mcp",
     "build": {
-        "frontendDist": "../webapp/dist"
+        "frontendDist": "../webapp/frontend/dist"
     },
     "app": {
         "windows": [
@@ -40,4 +40,3 @@
     },
     "plugins": {}
 }
-
