@@ -5,6 +5,21 @@ Kavita eBook/comics/manga server bridge
 
 **Ports:** Backend 11189 (REST /api, MCP /mcp) / Frontend 11190 (Vite)
 
+## Install in Claude Desktop
+
+Download `kavita-mcp.mcpb` from
+[releases/latest/download/kavita-mcp.mcpb](https://github.com/sandraschi/kavita-mcp/releases/latest/download/kavita-mcp.mcpb)
+(double-click to install), or run `dist/install.ps1`. Other clients (uvx):
+
+```json
+{
+  "mcpServers": {
+    "kavita-mcp": {"command": "uvx", "args": ["kavita-mcp"], "env": {"KAVITA_URL": "http://localhost:5000"}}
+  }
+}
+```
+
+
 ## How it runs
 Headless via `start.ps1` (zombie clears ports). Webapp optional. MCP via stdio or HTTP.
 

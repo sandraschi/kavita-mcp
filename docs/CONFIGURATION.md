@@ -8,7 +8,8 @@ Env (.env from .env.example):
 - `OLLAMA_URL`, `LMSTUDIO_URL` for Chat/Settings provider probe.
 
 Health: GET http://127.0.0.1:11189/api/health
-Tools: GET http://127.0.0.1:11189/api/tools
+Status/skills/LLM/diagnostics: GET /api/status, /api/skills, /api/llm/discover|providers|models|onboarding, /api/v1/diagnostics
+Chat proxy: POST /api/llm/chat (+ /stream SSE). Shutdown: POST /api/shutdown.
 
 Start: `start.ps1` (zombie-clears ports, polls health, launches bun dev), `start.bat`, or fleet `mcp-central-docs/starts/kavita-mcp-start.bat`.
 
