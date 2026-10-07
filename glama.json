@@ -1,6 +1,16 @@
 {
   "name": "kavita-mcp",
-  "description": "Kavita eBook/comics/manga server bridge \u2014 libraries, series, volumes, reading lists, progress, OPDS",
-  "version": "0.1.0",
-  "author": "sandraschi"
+  "description": "Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS",
+  "version": "0.1.2",
+  "author": "sandraschi",
+  "tools": [
+    {"name": "kavita_help", "description": "Tool catalog with operations and recipes"},
+    {"name": "kavita_library_tool", "description": "Manage Kavita libraries (list, get, scan)"},
+    {"name": "kavita_series_tool", "description": "Browse/search Kavita series and volumes"},
+    {"name": "kavita_reading_tool", "description": "Reading progress and bookmarks"},
+    {"name": "kavita_users_tool", "description": "List/get Kavita users"},
+    {"name": "kavita_system_tool", "description": "Kavita system status"},
+    {"name": "kavita_shutdown", "description": "Graceful server shutdown (agents + launcher hook)"},
+    {"name": "show_kavita_status_prefab", "description": "Prefab status card for Kavita"}
+  ]
 }

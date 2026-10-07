@@ -58,6 +58,11 @@ Thumbs.db
 *.log
 logs/
 
+# Assess reports (regenerable snapshots, not source)
+reports/
+# ...but the registry-visible copy IS committed:
+!docs/assess-reports/
+
 # Fleet backup
 *.bak
 *.bak.*

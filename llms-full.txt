@@ -1,4 +1,10 @@
 # kavita-mcp Full
 Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS
-Ports 11189/11190
-Tools: [{'name': 'kavita_library', 'description': 'Manage Kavita libraries (list, get, scan)'}, {'name': 'kavita_series', 'description': 'Browse/search Kavita series and volumes'}, {'name': 'kavita_reading', 'description': 'Reading progress and bookmarks'}, {'name': 'kavita_users', 'description': 'List/get Kavita users'}, {'name': 'kavita_system', 'description': 'Kavita system status'}, {'name': 'show_kavita_status_prefab', 'description': 'Prefab status card for Kavita'}]
+Ports 11189/11190 (fleet registry, adjacent)
+Transports: stdio default (`python -m kavita_mcp.server`), HTTP with --port/--http (REST /api, MCP /mcp)
+Tools (8): kavita_help, kavita_library_tool(list,get,scan), kavita_series_tool(list,search,get,get_chapters), kavita_reading_tool(get_progress,mark_progress,get_bookmarks), kavita_users_tool(list,get), kavita_system_tool(status), kavita_shutdown, show_kavita_status_prefab(app=True)
+REST: /api/health, /health, /api/status, /api/skills, /api/llm/discover, /api/llm/providers, /api/llm/models, /api/llm/onboarding, POST /api/llm/chat, POST /api/llm/chat/stream, /api/v1/diagnostics, POST /api/shutdown
+Skill: skill://kavita-mcp/kavita-expert (SkillsDirectoryProvider, src/kavita_mcp/skills/kavita-expert/SKILL.md)
+Config vars: KAVITA_URL, KAVITA_API_KEY, MOCK_MODE, BACKEND_PORT=11189, FRONTEND_PORT=11190, OLLAMA_URL, LMSTUDIO_URL
+Architecture: FastMCP 3.4 + Starlette dual-surface; lifespan-composed /mcp mount (path="/"); bare-/mcp rewrite; CORS explicit + LAN/Tailscale/tauri regex. Frontend Vite+React+Tailwind+Zustand, same-origin /api proxy.
+Docs: README, INSTALL, CHANGELOG, llms.txt, docs/ONBOARDING, CONFIGURATION, TOOLS, TROUBLESHOOTING, PRD, DEVELOPMENT
