@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "text",
+        "text": "## kavita-mcp\nMCP bridge to a self-hosted Kavita server (manga/comics/ebooks). Start with kavita_library_tool(operation=\"list\"), then kavita_series_tool(operation=\"list\"). MOCK-first until KAVITA_URL is set — MOCK badge means not live, not broken. End of work: just gates-green; sync docs/ when tools change."
+      }
+    ]
+  }
+}
