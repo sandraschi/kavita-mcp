@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "kavita-mcp"
-version = "0.1.0"
+version = "0.1.2"
 description = "Kavita eBook/comics/manga server bridge — libraries, series, volumes, reading lists, progress, OPDS"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -43,8 +43,17 @@ target-version = "py312"
 exclude = ["mcpb", "webapp", ".venv", "node_modules", "dist"]
 
 [tool.ruff.lint]
-select = ["E","F","I","UP","C4","B"]
+select = ["E","F","I","UP","C4","B","T20"]
 ignore = ["E501","B008","B904"]
+exclude = ["kavita-mcp-backend.spec"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["T20"]
+"scripts/**/*.py" = ["T20"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
 
 [tool.ruff.format]
 quote-style = "double"
@@ -54,4 +63,9 @@ dev = [
     "pillow>=12.3.0",
     "pytesseract>=0.3.13",
     "pywinauto>=0.6.9",
+    # Test + gate tooling: plain `uv sync` must leave `just test` green (assfix 2026-10-07).
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.23.0",
+    "pyright>=1.1.0",
+    "ruff>=0.16.0",
 ]
