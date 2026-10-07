@@ -73,7 +73,16 @@ async def health(request):
 
 
 def create_app():
-    app = Starlette(routes=[Route("/api/health", health), Route("/health", health)])
+    from starlette.routing import Mount
+
+    mcp_http = mcp.http_app(path="/")
+    app = Starlette(
+        routes=[
+            Route("/api/health", health),
+            Route("/health", health),
+            Mount("/mcp", app=mcp_http),
+        ]
+    )
     app.add_middleware(
         CORSMiddleware,
         allow_origins=["http://127.0.0.1:11190", "http://localhost:11190", "http://127.0.0.1:11189"],
@@ -89,10 +98,10 @@ def run():
     port = 11189
     if "--port" in sys.argv:
         port = int(sys.argv[sys.argv.index("--port") + 1])
-    mcp.settings.port = port
-    mcp.settings.host = "127.0.0.1"
     logger.info(f"Starting kavita-mcp on {port}")
-    mcp.run(transport="http", port=port, host="127.0.0.1")
+    import uvicorn
+
+    uvicorn.run(create_app(), host="127.0.0.1", port=port)
 
 
 if __name__ == "__main__":

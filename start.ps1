@@ -14,7 +14,9 @@ foreach($p in @($BackendPort,$FrontendPort)){ try{ Get-NetTCPConnection -LocalPo
 if(-not $BackendOnly){
   $b=Start-Job -Name "backend" -ScriptBlock{ param($R,$P) Set-Location $R; $env:PYTHONUNBUFFERED="1"; & "C:\Users\sandr\.local\bin\uv.exe" run python -m kavita_mcp.server --port $P } -ArgumentList $Root,$BackendPort
   for($i=0;$i -lt 30;$i++){ try{ $r=Invoke-WebRequest -Uri "http://127.0.0.1:$BackendPort/api/health" -TimeoutSec 2 -UseBasicParsing; if($r.StatusCode -eq 200){ break } }catch{}; Start-Sleep 1 }
-  if(Test-Path "$Root/webapp/frontend/package.json"){ try{ Start-Process -NoNewWindow -FilePath "cmd" -ArgumentList "/c bun run dev --port $FrontendPort --host" -WorkingDirectory "$Root/webapp/frontend" }catch{} }
+  $bunExe = Join-Path $env:USERPROFILE ".bun\bin\bun.exe"
+  if(-not (Test-Path $bunExe)){ $bunCmd = Get-Command bun -ErrorAction SilentlyContinue; if($bunCmd){ $bunExe = $bunCmd.Source } else { $bunExe = "bun" } }
+  if(Test-Path "$Root/webapp/frontend/package.json"){ try{ Start-Process -NoNewWindow -FilePath "cmd" -ArgumentList "/c `"$bunExe`" run dev --port $FrontendPort --host" -WorkingDirectory "$Root/webapp/frontend" }catch{ Write-Host "Frontend start failed: $_" -ForegroundColor Red } }
   if(-not $NoBrowser){ Start-Sleep 2; try{ Start-Process "http://127.0.0.1:$FrontendPort" }catch{} }
   Write-Host "Started backend job $($b.Id)" -ForegroundColor Green
   while($true){ if($b.State -in @("Completed","Failed")){ Receive-Job $b; break }; Start-Sleep 2 }
