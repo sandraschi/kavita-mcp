@@ -1,0 +1,14 @@
+# kavita-mcp session rules (Cursor / Windsurf / Copilot shared core)
+
+kavita-mcp bridges a self-hosted Kavita server (manga/comics/ebooks) to MCP clients.
+Backend Starlette on :11189 (REST /api/*, MCP /mcp). Frontend Vite on :11190.
+
+## Session Context (kavita-mcp)
+
+Before starting work: list libraries with kavita_library_tool(operation="list"),
+then drill into kavita_series_tool(operation="list"). All tools are MOCK-first
+until KAVITA_URL is set — a MOCK badge in the webapp means "not live yet", not broken.
+
+At end of work: run just gates-green (ruff + pyright + pytest + tsc + biome).
+Docs live in docs/ (ONBOARDING, CONFIGURATION, TOOLS, TROUBLESHOOTING); sync them
+when tools or endpoints change. Never commit .env (only .env.example).
