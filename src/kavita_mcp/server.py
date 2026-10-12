@@ -382,7 +382,7 @@ async def llm_models(request: Request) -> JSONResponse:
     provider = request.query_params.get("provider", "ollama")
     if provider == "ollama":
         try:
-            r = httpx.get(f"{OLLAMA_URL}/api/tags", timeout=4.0)
+            r = await asyncio.to_thread(httpx.get, f"{OLLAMA_URL}/api/tags", timeout=4.0)
             if r.status_code == 200:
                 models = [m.get("name", "?") for m in r.json().get("models", [])]
                 return JSONResponse({"provider": provider, "models": models, "live": True})
@@ -390,7 +390,7 @@ async def llm_models(request: Request) -> JSONResponse:
             logger.debug("ollama models fetch failed: %s", exc)
         return JSONResponse({"provider": provider, "models": ["llama3.1", "qwen2.5", "mistral"], "live": False})
     try:
-        r = httpx.get(f"{LMSTUDIO_URL}/v1/models", timeout=4.0)
+        r = await asyncio.to_thread(httpx.get, f"{LMSTUDIO_URL}/v1/models", timeout=4.0)
         if r.status_code == 200:
             models = [m.get("id", "?") for m in r.json().get("data", [])]
             return JSONResponse({"provider": provider, "models": models, "live": True})
@@ -434,14 +434,18 @@ async def llm_chat(request: Request) -> JSONResponse:
         return JSONResponse({"error": "messages[] required"}, status_code=400)
     try:
         if provider == "lmstudio":
-            r = httpx.post(
+            r = await asyncio.to_thread(
+                httpx.post,
                 f"{LMSTUDIO_URL}/v1/chat/completions",
                 json={"model": model, "messages": messages, "stream": False},
                 timeout=120.0,
             )
         else:
-            r = httpx.post(
-                f"{OLLAMA_URL}/api/chat", json={"model": model, "messages": messages, "stream": False}, timeout=120.0
+            r = await asyncio.to_thread(
+                httpx.post,
+                f"{OLLAMA_URL}/api/chat",
+                json={"model": model, "messages": messages, "stream": False},
+                timeout=120.0,
             )
         if r.status_code != 200:
             return JSONResponse({"error": f"provider HTTP {r.status_code}"}, status_code=502)
